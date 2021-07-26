@@ -55,9 +55,9 @@ class MainActivity : ComponentActivity() {
                 .clip(shape = RoundedCornerShape(4.dp)), contentScale = ContentScale.Crop)
             Spacer(Modifier.height(16.dp))
 
-            Text("A day wandering through the sandhills " + "in Shark Fin Cove, and a few of the " + "sights I saw", style = typography.h6, maxLines = 2, overflow = TextOverflow.Ellipsis)
-            Text("Davenport, California", style = typography.body2)
-            Text("December 2018", style = typography.body2)
+            Text("A day wandering through the Delhi " + "in Shark Fin Cove, and a few of the " + "sights I saw", style = typography.h6, maxLines = 2, overflow = TextOverflow.Ellipsis)
+            Text("Kohat Enclave, Delhi", style = typography.body2)
+            Text("August 2021", style = typography.body2)
         }
     }
 }

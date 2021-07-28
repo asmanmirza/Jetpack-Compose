@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
 @Composable fun ArticleStyle() {
     MaterialTheme {
         val typography = MaterialTheme.typography
-        Column(modifier = Modifier.padding(16.dp)) {
+        Column(modifier = Modifier.fillMaxSize()) {
             Image(painter = painterResource(R.drawable.ic_launcher_background), contentDescription = null, modifier = Modifier
                 .height(180.dp)
                 .fillMaxWidth()

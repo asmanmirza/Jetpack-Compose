@@ -49,15 +49,18 @@ class MainActivity : ComponentActivity() {
     MaterialTheme {
         val typography = MaterialTheme.typography
         Column(modifier = Modifier.fillMaxSize()) {
-            Image(painter = painterResource(R.drawable.ic_launcher_background), contentDescription = null, modifier = Modifier
-                .height(180.dp)
-                .fillMaxWidth()
-                .clip(shape = RoundedCornerShape(4.dp)), contentScale = ContentScale.Crop)
-            Spacer(Modifier.height(16.dp))
 
-            Text("A day wandering through the Delhi " + "in Shark Fin Cove, and a few of the " + "sights I saw", style = typography.h6, maxLines = 2, overflow = TextOverflow.Ellipsis)
-            Text("Kohat Enclave, Delhi", style = typography.body2)
-            Text("August 2021", style = typography.body2)
+            Column(modifier = Modifier.padding(16.dp)) {
+                Image(painter = painterResource(R.drawable.ic_launcher_background), contentDescription = null, modifier = Modifier
+                    .height(180.dp)
+                    .fillMaxWidth()
+                    .clip(shape = RoundedCornerShape(4.dp)), contentScale = ContentScale.Crop)
+                Spacer(Modifier.height(16.dp))
+
+                Text("A day wandering through the Delhi " + "in Shark Fin Cove, and a few of the " + "sights I saw", style = typography.h6, maxLines = 2, overflow = TextOverflow.Ellipsis)
+                Text("Kohat Enclave, Delhi", style = typography.body2)
+                Text("August 2021", style = typography.body2)
+            }
         }
     }
 }
